@@ -1,0 +1,9 @@
+from flask import Flask
+from controller.classification_controller import classification_controller_bp
+from controller.error_handler_controller import error_handler_request_bp
+from controller.monitoring_controller import monitoring_controller_bp
+
+app = Flask(__name__)
+app.register_blueprint(classification_controller_bp)
+app.register_blueprint(error_handler_request_bp)
+app.register_blueprint(monitoring_controller_bp)

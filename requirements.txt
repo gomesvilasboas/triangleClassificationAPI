@@ -1,0 +1,5 @@
+flask
+werkzeug
+gunicorn
+flask_expects_json
+boto3
